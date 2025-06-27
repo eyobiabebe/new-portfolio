@@ -24,11 +24,11 @@ const Speaker = () => {
           </div>
 
           <p className="text-gray-700 italic mb-6">
-            “Eyob Abebe is a passionate developer and a dedicated lifelong learner. 
-            With a strong commitment to building innovative solutions and sharing knowledge 
-            with others, he approaches every project with creativity, curiosity, and collaboration. 
-            Whether writing clean code, designing intuitive user interfaces, or helping others grow, 
-            he consistently strives to make a positive impact and contribute meaningfully to the tech community.”
+            &ldquo;Eyob Abebe is a passionate developer and a dedicated lifelong learner.&nbsp;
+            With a strong commitment to building innovative solutions and sharing knowledge&nbsp;
+            with others, he approaches every project with creativity, curiosity, and collaboration.&nbsp;
+            Whether writing clean code, designing intuitive user interfaces, or helping others grow,&nbsp;
+            he consistently strives to make a positive impact and contribute meaningfully to the tech community.&rdquo;
           </p>
 
           <div className="flex items-center gap-4">
