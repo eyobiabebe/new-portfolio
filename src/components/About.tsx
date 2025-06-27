@@ -1,5 +1,8 @@
+'use client'
+
 import { motion } from 'framer-motion'
-import { Mail, Phone } from 'lucide-react'  // import Mail and Phone icons
+import { Mail, Phone } from 'lucide-react'
+import Image from 'next/image'  // Import Image here
 
 export default function About() {
   const techStack = [
@@ -13,24 +16,23 @@ export default function About() {
     { name: 'Framer Motion', icon: '/tech/framer.svg' },
   ]
 
- const timeline = [
-  {
-    year: '2025 – Present',
-    title: 'web and app Developer',
-    desc: 'Working on freenance, building scalable web applications and user-friendly interfaces.',
-  },
-  {
-    year: '2023 – 2024',
-    title: 'Created a Online Bidding System',
-    desc: 'Built with the MERN Stack..',
-  },
-  {
-    year: '2019 – 2025',
-    title: 'Computer Science Graduate',
-    desc: 'Graduated with a strong focus on full-stack development and modern software engineering practices.',
-  },
-]
-
+  const timeline = [
+    {
+      year: '2025 – Present',
+      title: 'web and app Developer',
+      desc: 'Working on freelance, building scalable web applications and user-friendly interfaces.',
+    },
+    {
+      year: '2023 – 2024',
+      title: 'Created a Online Bidding System',
+      desc: 'Built with the MERN Stack..',
+    },
+    {
+      year: '2019 – 2025',
+      title: 'Computer Science Graduate',
+      desc: 'Graduated with a strong focus on full-stack development and modern software engineering practices.',
+    },
+  ]
 
   return (
     <motion.section
@@ -50,10 +52,13 @@ export default function About() {
           animate={{ scale: 1, opacity: 1 }}
           transition={{ duration: 1, delay: 0.3 }}
         >
-          <img
+          <Image
             src="/animedev.png"
             alt="Eyob Abebe"
-            className="w-64 h-64 md:w-80 md:h-80 object-cover rounded-3xl shadow-xl border-4 border-white dark:border-gray-800"
+            width={320}   // md:w-80 = 20rem = 320px
+            height={320}
+            className="rounded-3xl shadow-xl border-4 border-white dark:border-gray-800 object-cover"
+            priority
           />
         </motion.div>
 
@@ -66,11 +71,11 @@ export default function About() {
         >
           <h2 className="text-4xl font-bold mb-4">About Me</h2>
           <p className="text-lg mb-4">
-        Computer Science graduate with a strong background in full-stack development, specializing in the MERN stack and network systems. Passionate about building interactive web applications and delivering efficient, scalable solutions.
-      </p>
-      <p className="text-lg mb-6">
-        Proficient in both frontend and backend technologies, with a keen eye for problem-solving and optimizing performance across all layers of the tech stack.
-      </p>
+            Computer Science graduate with a strong background in full-stack development, specializing in the MERN stack and network systems. Passionate about building interactive web applications and delivering efficient, scalable solutions.
+          </p>
+          <p className="text-lg mb-6">
+            Proficient in both frontend and backend technologies, with a keen eye for problem-solving and optimizing performance across all layers of the tech stack.
+          </p>
 
           {/* Contact info with icons */}
           <p className="mb-3 flex items-center justify-center md:justify-start gap-2 text-lg">
@@ -109,7 +114,13 @@ export default function About() {
               whileHover={{ scale: 1.1, rotate: 2 }}
               className="flex flex-col items-center transition duration-300"
             >
-              <img src={tech.icon} alt={tech.name} className="w-12 h-12 mb-2" />
+              <Image
+                src={tech.icon}
+                alt={tech.name}
+                width={48}    // w-12 = 3rem = 48px
+                height={48}
+                className="mb-2"
+              />
               <p className="text-sm">{tech.name}</p>
             </motion.div>
           ))}

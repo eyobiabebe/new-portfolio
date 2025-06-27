@@ -13,24 +13,24 @@ interface Project {
 const projects: Project[] = [
   {
     title: 'Online Auction System',
-    description: 'Frontend built by react , tailwind , express  and  mongoodb for backend.',
+    description: 'Frontend built by React, Tailwind, Express, and MongoDB for backend.',
     image: '/images/bid1.jpg',
     link: 'https://github.com/abducodespro/bidding-project.git',
     tech: ['MongoDB', 'Express.js', 'React', 'Node.js', 'Framer Motion'],
   },
   {
     title: 'User Implementation',
-    description: 'I used Js framework and mongodb.',
+    description: 'I used JS framework and MongoDB.',
     image: '/images/userimp.png',
     link: 'https://github.com/eyobiabebe/User-implementation.git',
     tech: ['MongoDB', 'Express.js', 'React', 'Node.js', 'Stripe'],
   },
   {
-    title: ' crud user managment system',
+    title: 'CRUD User Management System',
     description: 'Full-stack MERN website with Stripe integration and an admin dashboard.',
     image: '/images/userman.jpeg',
     link: 'https://github.com/eyobiabebe/crud-user-management.git',
-    tech: ['React', 'Tailwind', 'Mongoodb', 'Framer motiom', 'Stripe'],
+    tech: ['React', 'Tailwind', 'MongoDB', 'Framer Motion', 'Stripe'],
   },
 ]
 
@@ -95,16 +95,17 @@ export default function Projects() {
             </div>
 
             {/* View Work Button */}
-<div className="flex items-center justify-center opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300">
-  <a
-    href={project.link}
-    target="_blank"
-    rel="noopener noreferrer"
-    className="text-blue-600 dark:text-blue-400 text-sm font-medium flex items-center gap-2 hover:underline"
-  >
-    View Work <FaArrowRight className="transform translate-x-0 group-hover:translate-x-1 transition-transform" />
-  </a>
-</div>
+            <div className="flex items-center justify-center opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300">
+              <a
+                href={project.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-600 dark:text-blue-400 text-sm font-medium flex items-center gap-2 hover:underline"
+              >
+                View Work{' '}
+                <FaArrowRight className="transform translate-x-0 group-hover:translate-x-1 transition-transform" />
+              </a>
+            </div>
 
             {/* Glow Border */}
             <div className="absolute inset-0 rounded-xl pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-300 border-2 border-blue-400/30 blur-sm"></div>

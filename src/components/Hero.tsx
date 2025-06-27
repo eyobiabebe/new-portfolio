@@ -1,5 +1,8 @@
+'use client'
+
 import { motion } from 'framer-motion'
 import { Download } from 'lucide-react'
+import Image from 'next/image'  // import Image
 
 export default function Hero() {
   return (
@@ -18,10 +21,13 @@ export default function Hero() {
           animate={{ scale: 1, opacity: 1 }}
           transition={{ duration: 1, delay: 0.3 }}
         >
-          <img
+          <Image
             src="/Eyobpic.png"
             alt="Eyob Abebe"
-            className="w-60 h-60 md:w-72 md:h-72 object-cover rounded-full shadow-2xl border-4 border-white"
+            width={288}  // 72 * 4 (tailwind's w-72 is 18rem = 288px)
+            height={288} // same for height
+            className="rounded-full shadow-2xl border-4 border-white object-cover"
+            priority // optional: loads image eagerly for hero section
           />
         </motion.div>
 
@@ -52,7 +58,7 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.8 }}
           >
-          Web Developer & Mobile App Developer crafting smooth, modern, and responsive experiences.
+            Web Developer & Mobile App Developer crafting smooth, modern, and responsive experiences.
           </motion.p>
 
           <motion.a

@@ -38,11 +38,9 @@ export default function Contact() {
       transition={{ duration: 0.8 }}
     >
       <div className="max-w-3xl mx-auto">
-        {/* Section Title */}
         <h2 className="text-5xl font-bold mb-4 text-gray-800">Get In Touch</h2>
         <p className="text-lg text-gray-600 mb-10">I'd love to hear about your project or idea!</p>
 
-        {/* Contact Info */}
         <div className="flex flex-col md:flex-row items-center justify-center gap-6 mb-8 text-gray-700">
           <div className="flex items-center gap-2 text-gray-700">
             <Phone size={20} /> <span>+251 948 837 169</span>
@@ -52,7 +50,6 @@ export default function Contact() {
           </div>
         </div>
 
-        {/* Social Icons */}
         <div className="flex justify-center gap-6 mb-12 text-gray-600 text-xl">
           <a
             href="https://github.com/eyobiabebe"
@@ -80,7 +77,6 @@ export default function Contact() {
           </a>
         </div>
 
-        {/* Contact Form */}
         <form ref={form} onSubmit={sendEmail} className="space-y-5">
           <input
             type="text"
@@ -111,7 +107,6 @@ export default function Contact() {
             Send Message
           </motion.button>
 
-          {/* Success / Error Messages */}
           {successMessage && <p className="text-green-600 mt-2">{successMessage}</p>}
           {errorMessage && <p className="text-red-600 mt-2">{errorMessage}</p>}
         </form>

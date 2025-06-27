@@ -31,14 +31,14 @@ export default function Footer() {
             <FaLinkedin size={18} />
           </a>
           <a
-  href="https://t.me/eyobi_dev"
-  aria-label="Telegram"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="text-gray-500 hover:text-gray-900 dark:hover:text-white transition"
->
-  <FaTelegramPlane size={18} />
-</a>
+            href="https://t.me/eyobi_dev"
+            aria-label="Telegram"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-500 hover:text-gray-900 dark:hover:text-white transition"
+          >
+            <FaTelegramPlane size={18} />
+          </a>
         </div>
       </div>
     </footer>

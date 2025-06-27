@@ -44,7 +44,9 @@ type Hover3DCardProps = {
 }
 
 function Hover3DCard({ children }: Hover3DCardProps) {
-  const [style, setStyle] = useState<CSSProperties>({})
+  const [style, setStyle] = useState<CSSProperties>({
+    willChange: 'transform',
+  })
 
   const handleMouseMove = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
     const rect = e.currentTarget.getBoundingClientRect()
@@ -56,6 +58,7 @@ function Hover3DCard({ children }: Hover3DCardProps) {
     const rotateY = ((x - centerX) / centerX) * 10
 
     setStyle({
+      willChange: 'transform',
       transform: `perspective(600px) rotateX(${-rotateX}deg) rotateY(${rotateY}deg) scale(1.05)`,
       transition: 'transform 0.1s ease-out',
     })
@@ -63,6 +66,7 @@ function Hover3DCard({ children }: Hover3DCardProps) {
 
   const handleMouseLeave = () => {
     setStyle({
+      willChange: 'transform',
       transform: 'perspective(600px) rotateX(0) rotateY(0) scale(1)',
       transition: 'transform 0.5s ease',
     })
@@ -70,7 +74,7 @@ function Hover3DCard({ children }: Hover3DCardProps) {
 
   return (
     <div
-      className="bg-white rounded-lg shadow-lg p-6 cursor-pointer"
+      className="bg-white rounded-lg shadow-lg p-6 cursor-pointer select-none"
       style={style}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
