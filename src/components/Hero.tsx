@@ -43,7 +43,7 @@ export default function Hero() {
               delay: 0.6,
             }}
           >
-            Hi, I'm <span className="text-yellow-300">Eyob</span>
+            Hi, I&apos;m <span className="text-yellow-300">Eyob</span>
           </motion.h1>
 
           <motion.p
