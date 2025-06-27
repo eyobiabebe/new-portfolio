@@ -39,7 +39,7 @@ export default function Contact() {
     >
       <div className="max-w-3xl mx-auto">
         <h2 className="text-5xl font-bold mb-4 text-gray-800">Get In Touch</h2>
-        <p className="text-lg text-gray-600 mb-10">I'd love to hear about your project or idea!</p>
+        <p className="text-lg text-gray-600 mb-10">I&apos;d love to hear about your project or idea!</p>
 
         <div className="flex flex-col md:flex-row items-center justify-center gap-6 mb-8 text-gray-700">
           <div className="flex items-center gap-2 text-gray-700">
