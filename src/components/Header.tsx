@@ -1,7 +1,6 @@
 'use client'
 
 import Link from 'next/link'
-import Image from 'next/image'  // <-- Import Image here
 import { useState } from 'react'
 import { HiMenu, HiX } from 'react-icons/hi'
 
