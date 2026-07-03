@@ -1,6 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { FaArrowRight } from 'react-icons/fa'
+import Image from 'next/image'
 
 interface Project {
   title: string
@@ -77,11 +78,15 @@ export default function Projects() {
             viewport={{ once: true, amount: 0.2 }}
             variants={cardVariants}
           >
-            <img
-              src={project.image}
-              alt={project.title}
-              className="w-full h-48 object-cover rounded-md mb-4"
-            />
+            <div className="relative w-full h-48 mb-4">
+          <Image
+            src={project.image}
+            alt={project.title}
+            fill
+            className="object-cover rounded-md"
+            sizes="(max-width: 768px) 100vw, 33vw"
+          />
+        </div>
 
             <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-2 group-hover:underline underline-offset-4 decoration-blue-500 transition">
               {project.title}
