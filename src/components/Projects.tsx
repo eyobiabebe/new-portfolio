@@ -11,23 +11,32 @@ interface Project {
 }
 
 const projects: Project[] = [
+
+  {
+    title: 'takeover mobile web and app',
+    description: 'Save money, save time, and connect with verified renters in your area. Takeover Mobile is a platform that connects landlords and tenants for hassle-free property rentals.',
+    image: '/images/takeover.png',
+    link: 'https://www.takeovermobile.com/',
+    tech: ['Postgrsql', 'Express.js', 'React', 'Node.js', 'Framer Motion','stripe'],
+  },
+  {
+    title: 'Modeling website',
+    description: 'A modern modeling platform that showcases models, portfolios, and photoshoots, allowing users to explore talent, discover programs, and connect with agencies through a clean and interactive experience.',
+    image: '/images/modeling.png',
+    link: 'https://zolamodeling.com/',
+    tech: ['MongoDB', 'Express.js', 'React', 'Node.js', 'Framer Motion'],
+  },
   {
     title: 'Online Auction System',
-    description: 'Frontend built by React, Tailwind, Express, and MongoDB for backend.',
+    description: 'An online bidding system that enables users to post projects, place bids, and manage offers in real time. It connects clients and freelancers through a transparent and efficient auction-based workflow with secure authentication and streamlined communication.',
     image: '/images/bid1.jpg',
     link: 'https://github.com/abducodespro/bidding-project.git',
     tech: ['MongoDB', 'Express.js', 'React', 'Node.js', 'Framer Motion'],
   },
-  {
-    title: 'User Implementation',
-    description: 'I used JS framework and MongoDB.',
-    image: '/images/userimp.png',
-    link: 'https://github.com/eyobiabebe/User-implementation.git',
-    tech: ['MongoDB', 'Express.js', 'React', 'Node.js', 'Stripe'],
-  },
+
   {
     title: 'CRUD User Management System',
-    description: 'Full-stack MERN website with Stripe integration and an admin dashboard.',
+    description: 'A CRUD User Management System that allows administrators to create, view, update, and delete user accounts efficiently, with secure authentication, role-based access control, and an organized interface for managing user data.',
     image: '/images/userman.jpeg',
     link: 'https://github.com/eyobiabebe/crud-user-management.git',
     tech: ['React', 'Tailwind', 'MongoDB', 'Framer Motion', 'Stripe'],

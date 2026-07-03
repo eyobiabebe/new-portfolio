@@ -7,7 +7,7 @@ import Image from 'next/image'  // import Image
 export default function Hero() {
   return (
     <motion.section
-      className="h-screen bg-gradient-to-r from-blue-500 to-purple-600 text-white flex items-center justify-center px-4"
+      className="h-screen bg-gradient-to-r from-gray-900 via-purple-950 to-black text-white flex items-center justify-center px-4"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
@@ -21,14 +21,16 @@ export default function Hero() {
           animate={{ scale: 1, opacity: 1 }}
           transition={{ duration: 1, delay: 0.3 }}
         >
+          <div className="w-[350px] h-[350px] rounded-full overflow-hidden border-4 border-white shadow-2xl">
           <Image
-            src="/Eyobpic.png"
+            src="/epic.jpg"
             alt="Eyob Abebe"
-            width={288}  // 72 * 4 (tailwind's w-72 is 18rem = 288px)
-            height={288} // same for height
-            className="rounded-full shadow-2xl border-4 border-white object-cover"
-            priority // optional: loads image eagerly for hero section
+            width={350}
+            height={350}
+            className="object-cover w-full h-full"
+            priority
           />
+        </div>
         </motion.div>
 
         {/* Text Section */}
@@ -58,11 +60,11 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.8 }}
           >
-            Web Developer & Mobile App Developer crafting smooth, modern, and responsive experiences.
+            Website & Mobile App Developer| Node js | React | Next js | React Native | Tailwind CSS | MongoDB | Express js | AI Expert | MERN Stack Developer | Software Engineer | UI/UX Designer
           </motion.p>
 
           <motion.a
-            href="/Eyob_CV.pdf"
+            href="/Eyob_ab_cv.pdf"
             download
             className="inline-flex items-center gap-2 bg-yellow-400 text-blue-900 px-6 py-3 font-semibold rounded-lg shadow-md hover:bg-yellow-300 transition duration-300"
             whileHover={{ scale: 1.05 }}

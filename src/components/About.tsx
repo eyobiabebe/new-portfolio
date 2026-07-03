@@ -23,9 +23,14 @@ export default function About() {
       desc: 'Working on freelance, building scalable web applications and user-friendly interfaces.',
     },
     {
+      year: '2025 – 2026',
+      title: 'built and deployed takeover mobile and modeling website',
+      desc: 'For Lease Takeover Mobile and Modeling website, I built and deployed a full-stack web application using the MERN stack, implementing features such as user authentication, real-time data updates, and responsive design for optimal user experience.',
+    },
+    {
       year: '2023 – 2024',
       title: 'Created a Online Bidding System',
-      desc: 'Built with the MERN Stack..',
+      desc: 'build and deployed an online bidding system using the MERN stack, implementing features such as real-time bidding, user authentication, and secure payment processing for a seamless auction experience.',
     },
     {
       year: '2019 – 2025',
@@ -71,7 +76,7 @@ export default function About() {
         >
           <h2 className="text-4xl font-bold mb-4">About Me</h2>
           <p className="text-lg mb-4">
-            Computer Science graduate with a strong background in full-stack development, specializing in the MERN stack and network systems. Passionate about building interactive web applications and delivering efficient, scalable solutions.
+            Computer Science graduate with a strong background in full-stack development, specializing in the MERN , PERN stack , AI models and network systems. Passionate about building interactive web applications and delivering efficient, scalable solutions.
           </p>
           <p className="text-lg mb-6">
             Proficient in both frontend and backend technologies, with a keen eye for problem-solving and optimizing performance across all layers of the tech stack.

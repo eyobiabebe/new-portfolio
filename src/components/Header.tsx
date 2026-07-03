@@ -14,15 +14,9 @@ export default function Header() {
         {/* Logo + Title */}
         <Link href="/" passHref>
           <div className="flex items-center space-x-2 cursor-pointer">
-            <Image
-              src="/images/EL.png"
-              alt="Logo"
-              width={32}        // specify width
-              height={32}       // specify height
-              className="rounded-full object-cover filter brightness-0 invert-0 sepia saturate-100 hue-rotate-200"
-            />
+            
             <span className="text-blue-500 font-extrabold text-2xl tracking-wide hover:text-blue-700 hover:underline transition-colors duration-300 cursor-pointer select-none">
-              Eyobi.dev
+              Eyobi.dev — Full-Stack Developer
             </span>
           </div>
         </Link>
